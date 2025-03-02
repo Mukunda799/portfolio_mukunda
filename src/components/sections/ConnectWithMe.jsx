@@ -6,13 +6,13 @@ const ConnectWithMe = () => {
     <div className="bg-black p-6 rounded-2xl shadow-lg text-center mt-10">
       <h2 className="text-xl font-semibold mb-4 text-white">Connect with me:</h2>
       <div className="flex justify-center space-x-6">
-        <a href="mailto:your-email@example.com" target="_blank" rel="noopener noreferrer">
+        <a href="mailto:mukundakrishnaramisetti04@gmail.com" target="_blank" rel="noopener noreferrer">
           <Mail className="w-6 h-6 text-white hover:text-blue-400 transition" />
         </a>
-        <a href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.linkedin.com/in/mukunda-krishna-ramisetti/" target="_blank" rel="noopener noreferrer">
           <Linkedin className="w-6 h-6 text-white hover:text-blue-400 transition" />
         </a>
-        <a href="https://github.com/your-username" target="_blank" rel="noopener noreferrer">
+        <a href="https://github.com/Mukunda799" target="_blank" rel="noopener noreferrer">
           <Github className="w-6 h-6 text-white hover:text-blue-400 transition" />
         </a>
       </div>

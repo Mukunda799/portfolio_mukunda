@@ -2,6 +2,7 @@ import { useState } from "react";
 import { FaUniversity, FaGraduationCap, FaCalendarAlt, FaStar } from "react-icons/fa";
 import { RevealOnScroll } from "../RevealOnScroll"; 
 import ConnectWithMe from "./ConnectWithMe";
+import { FaDownload } from "react-icons/fa";
 
 export const Home = () => {
   return (
@@ -23,11 +24,51 @@ export const Home = () => {
             </h1>
           </div>
 
-          <p className="text-gray-400 text-lg mb-8 max-w-2xl mx-auto">
-            I’m a full-stack developer passionate about crafting clean, scalable
-            web applications. My goal is to build solutions that offer both
-            exceptional performance and a delightful user experience.
-          </p>
+          <section className="bg-white-100 text-white-800 py-12">
+    <div className="max-w-3xl mx-auto px-6">
+        <p className="text-lg mb-6">
+            I am a passionate <strong>Full Stack Java Developer</strong> with over two years of experience, alongside a 
+            master's degree in Artificial Intelligence and a bachelor's in Computer Science.
+        </p>
+
+        <p className="text-lg mb-6">
+            My journey in software development began at <strong>LTIMindtree</strong>, where I contributed to the development 
+            of an <strong>Airline Vacations App</strong> with loyalty points integration, improving efficiency by 40%. 
+            I worked extensively with <strong>Java, Spring Boot, REST APIs, and Angular</strong> to deliver scalable and high-performance solutions.
+        </p>
+
+        <p className="text-lg mb-6">
+            After my time at LTIMindtree, I moved to the United States to pursue a <strong>Master’s in Artificial Intelligence</strong> 
+            at the <strong>University of North Texas</strong>. During my program, I have learned the GEN AI, Data Engineering solutions and various Data Visualization tools.
+        </p>
+
+        <p className="text-lg mb-6">
+            At <strong>Tek Leaders</strong>, I worked on building enterprise-grade features like <strong>Cycle Counting and 
+            Transport Management Systems</strong> using <strong>Java, React, and Kafka</strong>, reducing operational costs by 30%.
+        </p>
+
+        <p className="text-lg mb-6">
+            My expertise spans from developing robust <strong>microservices architectures</strong> to implementing secure 
+            <strong>OAuth2 and JWT authentication</strong>. I also have hands-on experience setting up <strong>CI/CD pipelines, 
+            cloud infrastructure, and DevOps automation</strong>.
+        </p>
+
+        <p className="text-lg mb-6">
+            Having worked in both <strong>startup environments and large enterprises</strong>, I have developed the ability 
+            to adapt and thrive in diverse team settings.
+        </p>
+
+        <p className="text-lg font-semibold">
+            I am now seeking a full-time position as a <strong>Software Engineer</strong>, where I can leverage my skills 
+            to drive innovation and excellence in the tech industry.
+        </p>
+
+        <p className="text-lg mt-6">
+            <strong>Let’s connect</strong> and explore how we can collaborate to build impactful solutions!
+        </p>
+    </div>
+</section>
+
 
           {/* Buttons */}
           <div className="flex justify-center space-x-4">
@@ -36,6 +77,15 @@ export const Home = () => {
               className="bg-blue-500 text-white py-3 px-6 rounded-xl font-medium shadow-lg hover:scale-105 transition-transform duration-300 hover:shadow-2xl"
             >
               View Projects
+            </a>
+            <a
+              href="/resume.pdf"  // Ensure resume.pdf is placed in public/
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-blue-500 text-white py-3 px-6 rounded-xl font-medium shadow-lg hover:scale-105 transition-transform duration-300 hover:shadow-2xl flex items-center space-x-2"
+            >
+              <span>Download Resume</span>
+              <FaDownload className="ml-2" />
             </a>
           </div>
 
@@ -59,12 +109,12 @@ export const Education = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-5xl">
         <EducationCard
-          logo="/path-to-njit-logo.png"
-          altText="NJIT Logo"
-          university="New Jersey Institute of Technology"
-          degree="Masters in Computer Science"
-          duration="Sept 2022 - May 2024"
-          gpa="4.0/4.0"
+          logo="..\pedrotech-portfolio\public\UNTLOGO.jpg"
+          altText="UNT Logo"
+          university="University of North Texas"
+          degree="Masters in Artificial Intelligence"
+          duration="Jan 2023 - Dec 2024"
+          gpa="3.45/4.0"
           coursework={[
             "Data Structures",
             "Algorithms",
@@ -74,12 +124,12 @@ export const Education = () => {
         />
 
         <EducationCard
-          logo="/path-to-anna-university-logo.png"
-          altText="Anna University Logo"
-          university="Anna University"
-          degree="B.Tech in Information Technology"
+          logo="..\pedrotech-portfolio\public\SCSVMV_LOGO.jpg"
+          altText="SCSVMV University Logo"
+          university="SCSVMV University"
+          degree="B.Tech in Computer Science"
           duration="July 2016 - May 2020"
-          gpa="8.32/10"
+          gpa="8.40/10"
           coursework={[
             "Data Structures",
             "Algorithms",
