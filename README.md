@@ -84,8 +84,4 @@ your-portfolio/
 - **Components:** Edit individual components in the `src/components/` folder to update content or styling.
 - **Sections:** Update content in the `src/components/sections/` directory to showcase your personal projects, skills, info, and contact details.
 
-## Contributing
-
-Contributions are welcome! Please open an issue or submit a pull request with improvements.
-
 
