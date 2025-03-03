@@ -2,9 +2,6 @@
 
 This repository contains a beautiful, responsive personal portfolio built using **React**, **Vite**, and **TailwindCSS**. The project showcases modern web development techniques including smooth animations, responsive layouts, and interactive UI components.
 
-### Want to watch this?
-[![Check this out](https://img.youtube.com/vi/LGdPMf-SgBA/maxresdefault.jpg)](https://youtu.be/LGdPMf-SgBA)
-
 
 ## Features
 
@@ -91,10 +88,4 @@ your-portfolio/
 
 Contributions are welcome! Please open an issue or submit a pull request with improvements.
 
-## License
 
-This project is open source and available under the [MIT License](LICENSE).
-
----
-
-Happy coding and enjoy building your professional portfolio!
