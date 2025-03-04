@@ -133,6 +133,7 @@ export const Education = () => {
           coursework={[
             "Data Structures",
             "Algorithms",
+            "Networking",
             "Distributed Systems",
             "Databases",
           ]}
