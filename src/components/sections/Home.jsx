@@ -128,7 +128,7 @@ export const Education = () => {
           altText="SCSVMV University Logo"
           university="SCSVMV University"
           degree="B.Tech in Computer Science"
-          duration="July 2016 - May 2020"
+          duration="July 2017 - May 2021"
           gpa="8.40/10"
           coursework={[
             "Data Structures",
