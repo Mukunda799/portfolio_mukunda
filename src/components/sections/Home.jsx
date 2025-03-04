@@ -15,7 +15,7 @@ export const Home = () => {
           {/* Profile Picture Above Name */}
           <div className="flex flex-col items-center mb-6">
             <img
-              src="..\pedrotech-portfolio\public\DSC_0463.JPG" // Update your profile pic path here
+              src="/portfolio_mukunda/DSC_0463.JPG" // Update your profile pic path herepedrotech-portfolio\public\DSC_0463.JPG
               alt="Mukunda Krishna Ramisetti"
               className="w-65 h-65 object-cover rounded-full mb-6" // Change to object-contain to avoid cropping
             />
@@ -79,7 +79,7 @@ export const Home = () => {
               View Projects
             </a>
             <a
-              href="/resume.pdf"  // Ensure resume.pdf is placed in public/
+              href="/portfolio_mukunda/Mukunda_R_Resume.pdf"  // Ensure resume.pdf is placed in public/
               target="_blank"
               rel="noopener noreferrer"
               className="bg-blue-500 text-white py-3 px-6 rounded-xl font-medium shadow-lg hover:scale-105 transition-transform duration-300 hover:shadow-2xl flex items-center space-x-2"
@@ -109,7 +109,7 @@ export const Education = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-5xl">
         <EducationCard
-          logo="..\pedrotech-portfolio\public\UNTLOGO.jpg"
+          logo="/portfolio_mukunda/UNTLOGO.jpg"
           altText="UNT Logo"
           university="University of North Texas"
           degree="Masters in Artificial Intelligence"
@@ -124,7 +124,7 @@ export const Education = () => {
         />
 
         <EducationCard
-          logo="..\pedrotech-portfolio\public\SCSVMV_LOGO.jpg"
+          logo="/portfolio_mukunda/SCSVMV_LOGO.jpg"
           altText="SCSVMV University Logo"
           university="SCSVMV University"
           degree="B.Tech in Computer Science"
