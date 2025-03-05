@@ -52,3 +52,17 @@ body {
   background: linear-gradient(to right, #2c3e50, #3498db); /* Same gradient */
   /* ... other styles ... */
 }
+.loading-screen {
+  height: 100vh; /* Ensures it takes the full viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body {
+  overflow: hidden;
+}
+
+/* Once loading is complete, reset it */
+body.loaded {
+  overflow: auto;
+}

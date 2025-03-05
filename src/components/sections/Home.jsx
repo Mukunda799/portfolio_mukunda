@@ -100,12 +100,24 @@ export const Home = () => {
   );
 };
 
-
-
 export const Education = () => {
+  // This state keeps track of which card is open. Initially, no card is open.
+  const [openIndex, setOpenIndex] = useState(null);
+
+  // Function to toggle the visibility of the clicked card
+  const toggleCard = (index) => {
+    if (openIndex === index) {
+      setOpenIndex(null); // Close the card if it's already open
+    } else {
+      setOpenIndex(index); // Open the clicked card
+    }
+  };
+
   return (
     <section id="education" className="py-20 bg-black text-center flex flex-col items-center">
-      <h2 className="text-4xl font-bold mb-12 text-white">Education</h2>
+      <h2 className="text-4xl font-extrabold mb-12 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent">
+           Education
+          </h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-5xl">
         <EducationCard
@@ -121,6 +133,8 @@ export const Education = () => {
             "Distributed Systems",
             "Databases",
           ]}
+          isOpen={openIndex === 0} // Pass true or false based on the clicked index
+          toggleCard={() => toggleCard(0)} // Pass toggle function for the first card
         />
 
         <EducationCard
@@ -137,19 +151,19 @@ export const Education = () => {
             "Distributed Systems",
             "Databases",
           ]}
+          isOpen={openIndex === 1} // Pass true or false based on the clicked index
+          toggleCard={() => toggleCard(1)} // Pass toggle function for the second card
         />
       </div>
     </section>
   );
 };
 
-const EducationCard = ({ logo, altText, university, degree, duration, gpa, coursework }) => {
-  const [isOpen, setIsOpen] = useState(false);
-
+const EducationCard = ({ logo, altText, university, degree, duration, gpa, coursework, isOpen, toggleCard }) => {
   return (
     <div 
       className="flex flex-col bg-white p-6 rounded-2xl shadow-md hover:shadow-lg transition-transform hover:scale-105 w-full border border-gray-300"
-      onClick={() => setIsOpen(!isOpen)} // Toggle isOpen when the card is clicked
+      onClick={toggleCard} // Use the passed toggle function
     >
       <div className="flex items-center space-x-4 cursor-pointer">
         <img src={logo} alt={altText} className="w-14 h-14 object-contain rounded-full" />
