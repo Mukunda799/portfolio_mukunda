@@ -29,6 +29,13 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
               Home
             </a>
             <a
+              href="#education"
+              className="text-gray-300 hove:text-white transition-colors"
+            >
+              {" "}
+              Education{" "}
+            </a>
+            <a
               href="#skills"
               className="text-gray-300 hove:text-white transition-colors"
             >

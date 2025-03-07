@@ -8,6 +8,7 @@ import { Skills } from "./components/sections/Skills";
 import { Projects } from "./components/sections/Projects";
 import "./index.css";
 import { Contact } from "./components/sections/Contact";
+import { Education } from "./components/sections/Education";
 
 function App() {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -27,6 +28,7 @@ function App() {
         <Skills />
         <Projects />
         <Contact />
+        <Education />
       </div>
     </>
   );

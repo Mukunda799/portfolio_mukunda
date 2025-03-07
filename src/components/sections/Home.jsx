@@ -1,8 +1,9 @@
-import { useState } from "react";
-import { FaUniversity, FaGraduationCap, FaCalendarAlt, FaStar } from "react-icons/fa";
+import React from 'react';
 import { RevealOnScroll } from "../RevealOnScroll"; 
 import ConnectWithMe from "./ConnectWithMe";
 import { FaDownload } from "react-icons/fa";
+import Education from "./Education";
+
 
 export const Home = () => {
   return (
@@ -24,11 +25,11 @@ export const Home = () => {
             </h1>
           </div>
 
-          <section className="bg-white-100 text-white-800 py-12">
+          <section className="bg-white-100 text-white-800">
     <div className="max-w-3xl mx-auto px-6">
         <p className="text-lg mb-6">
             I am a passionate <strong>Full Stack Java Developer</strong> with over two years of experience, alongside a 
-            master's degree in Artificial Intelligence and a bachelor's in Computer Science.
+            master's and a bachelor's in Computer Science.
         </p>
 
         <p className="text-lg mb-6">
@@ -38,8 +39,8 @@ export const Home = () => {
         </p>
 
         <p className="text-lg mb-6">
-            After my time at LTIMindtree, I moved to the United States to pursue a <strong>Master’s in Artificial Intelligence</strong> 
-            at the <strong>University of North Texas</strong>. During my program, I have learned the GEN AI, Data Engineering solutions and various Data Visualization tools.
+            After my time at LTIMindtree, I moved to the United States to pursue a <strong>Master’s in Artificial Intelligence </strong> 
+             at the <strong>University of North Texas</strong>. During my program, I have learned the GEN AI, Data Engineering solutions and various Data Visualization tools.
         </p>
 
         <p className="text-lg mb-6">
@@ -69,7 +70,11 @@ export const Home = () => {
     </div>
 </section>
 
+          {/* Connect With Me Section */}
+          <ConnectWithMe />
 
+      
+          
           {/* Buttons */}
           <div className="flex justify-center space-x-4">
             <a
@@ -88,107 +93,13 @@ export const Home = () => {
               <FaDownload className="ml-2" />
             </a>
           </div>
+  {/* Connect With Me Section */}
+  <ConnectWithMe />
 
-          {/* Connect With Me Section */}
-          <ConnectWithMe />
-
-          {/* 🎓 Education Section */}
-          <Education />
-        </div>
-      </RevealOnScroll>
-    </section>
-  );
-};
-
-export const Education = () => {
-  // This state keeps track of which card is open. Initially, no card is open.
-  const [openIndex, setOpenIndex] = useState(null);
-
-  // Function to toggle the visibility of the clicked card
-  const toggleCard = (index) => {
-    if (openIndex === index) {
-      setOpenIndex(null); // Close the card if it's already open
-    } else {
-      setOpenIndex(index); // Open the clicked card
-    }
-  };
-
-  return (
-    <section id="education" className="py-20 bg-black text-center flex flex-col items-center">
-      <h2 className="text-4xl font-extrabold mb-12 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent">
-           Education
-          </h2>
-
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-5xl">
-        <EducationCard
-          logo="/portfolio_mukunda/UNTLOGO.jpg"
-          altText="UNT Logo"
-          university="University of North Texas"
-          degree="Masters in Artificial Intelligence"
-          duration="Jan 2023 - Dec 2024"
-          gpa="3.45/4.0"
-          coursework={[
-            "Data Structures",
-            "Algorithms",
-            "Distributed Systems",
-            "Databases",
-          ]}
-          isOpen={openIndex === 0} // Pass true or false based on the clicked index
-          toggleCard={() => toggleCard(0)} // Pass toggle function for the first card
-        />
-
-        <EducationCard
-          logo="/portfolio_mukunda/SCSVMV_LOGO.jpg"
-          altText="SCSVMV University Logo"
-          university="SCSVMV University"
-          degree="B.Tech in Computer Science"
-          duration="July 2017 - May 2021"
-          gpa="8.40/10"
-          coursework={[
-            "Data Structures",
-            "Algorithms",
-            "Networking",
-            "Distributed Systems",
-            "Databases",
-          ]}
-          isOpen={openIndex === 1} // Pass true or false based on the clicked index
-          toggleCard={() => toggleCard(1)} // Pass toggle function for the second card
-        />
-      </div>
-    </section>
-  );
-};
-
-const EducationCard = ({ logo, altText, university, degree, duration, gpa, coursework, isOpen, toggleCard }) => {
-  return (
-    <div 
-      className="flex flex-col bg-white p-6 rounded-2xl shadow-md hover:shadow-lg transition-transform hover:scale-105 w-full border border-gray-300"
-      onClick={toggleCard} // Use the passed toggle function
-    >
-      <div className="flex items-center space-x-4 cursor-pointer">
-        <img src={logo} alt={altText} className="w-14 h-14 object-contain rounded-full" />
-        <div className="text-left">
-          <h3 className="text-lg font-semibold text-gray-900 flex items-center space-x-1">
-            <FaUniversity className="text-gray-600" /> <span>{university}</span>
-          </h3>
-          <p className="text-gray-700 flex items-center space-x-1">
-            <FaGraduationCap className="text-gray-500" /> <span>{degree}</span>
-          </p>
-          <p className="text-gray-500 flex items-center space-x-1">
-            <FaCalendarAlt className="text-gray-400" /> <span>{duration}</span>
-          </p>
-          <p className="text-gray-500 flex items-center space-x-1">
-            <FaStar className="text-yellow-500" /> <span>GPA: {gpa}</span>
-          </p>
-        </div>
-      </div>
-
-      {/* Click-to-Reveal Coursework */}
-      {isOpen && coursework && (
-        <div className="mt-3 text-gray-700 text-sm border-t pt-3">
-          <strong>Relevant coursework:</strong> {coursework.join(", ")}.
-        </div>
-      )}
-    </div>
-  );
+{/* 🎓 Education Section */}
+</div>
+<Education />
+</RevealOnScroll>
+</section>
+);
 };

@@ -3,7 +3,7 @@ import { FaCode, FaServer, FaDatabase, FaTools, FaCloud } from "react-icons/fa";
 
 export const Skills = () => {
   const skillCategories = [
-    { title: "Frontend", icon: <FaCode className="text-blue-400 text-3xl" />, skills: ["React", "Vue", "TypeScript", "TailwindCSS", "Svelte"] },
+    { title: "Frontend", icon: <FaCode className="text-blue-400 text-3xl" />, skills: [ "HTML5", "CSS", "JavaScript", "TypeScript","React", "TypeScript", "TailwindCSS"] },
     { title: "Backend", icon: <FaServer className="text-green-400 text-3xl" />, skills: ["Node.js", "Python", "AWS", "GraphQL", "Django"] },
     { title: "Databases", icon: <FaDatabase className="text-yellow-400 text-3xl" />, skills: ["MongoDB", "PostgreSQL", "MySQL", "Firebase", "Redis"] },
     { title: "Cloud Technologies", icon: <FaCloud className="text-cyan-400 text-3xl" />, skills: ["AWS", "Azure", "Google Cloud", "Docker", "Kubernetes"] },

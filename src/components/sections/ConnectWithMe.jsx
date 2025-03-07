@@ -3,7 +3,7 @@ import { Mail, Linkedin, Github } from 'lucide-react';
 
 const ConnectWithMe = () => {
   return (
-    <div className="bg-black p-6 rounded-2xl shadow-lg text-center mt-10">
+    <div className="bg-black p-6 rounded-2xl shadow-lg text-center">
       <h2 className="text-xl font-semibold mb-4 text-white">Connect with me:</h2>
       <div className="flex justify-center space-x-6">
         <a href="mailto:mukundakrishnaramisetti04@gmail.com" target="_blank" rel="noopener noreferrer">
