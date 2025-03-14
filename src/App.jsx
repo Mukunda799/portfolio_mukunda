@@ -9,6 +9,7 @@ import { Projects } from "./components/sections/Projects";
 import "./index.css";
 import { Contact } from "./components/sections/Contact";
 import { Education } from "./components/sections/Education";
+import { ExperienceSection } from "./components/sections/Experience";
 
 function App() {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -25,10 +26,12 @@ function App() {
         <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
         <MobileMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
         <Home />
+        <Education />
         <Skills />
+        <ExperienceSection />
         <Projects />
         <Contact />
-        <Education />
+       
       </div>
     </>
   );

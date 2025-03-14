@@ -4,7 +4,6 @@ import ConnectWithMe from "./ConnectWithMe";
 import { FaDownload } from "react-icons/fa";
 import Education from "./Education";
 
-
 export const Home = () => {
   return (
     <section
@@ -26,55 +25,53 @@ export const Home = () => {
           </div>
 
           <section className="bg-white-100 text-white-800">
-    <div className="max-w-3xl mx-auto px-6">
-        <p className="text-lg mb-6">
-            I am a passionate <strong>Full Stack Java Developer</strong> with over two years of experience, alongside a 
-            master's and a bachelor's in Computer Science.
-        </p>
+            <div className="max-w-3xl mx-auto px-6">
+              <p className="text-lg mb-6">
+                I am a passionate <strong>Full Stack Java Developer</strong> with over two years of experience, alongside a 
+                master's and a bachelor's in Computer Science.
+              </p>
 
-        <p className="text-lg mb-6">
-            My journey in software development began at <strong>LTIMindtree</strong>, where I contributed to the development 
-            of an <strong>Airline Vacations App</strong> with loyalty points integration, improving efficiency by 40%. 
-            I worked extensively with <strong>Java, Spring Boot, REST APIs, and Angular</strong> to deliver scalable and high-performance solutions.
-        </p>
+              <p className="text-lg mb-6">
+                My journey in software development began at <strong>LTIMindtree</strong>, where I contributed to the development 
+                of an <strong>Airline Vacations App</strong> with loyalty points integration, improving efficiency by 40%. 
+                I worked extensively with <strong>Java, Spring Boot, REST APIs, and Angular</strong> to deliver scalable and high-performance solutions.
+              </p>
 
-        <p className="text-lg mb-6">
-            After my time at LTIMindtree, I moved to the United States to pursue a <strong>Master’s in Artificial Intelligence </strong> 
-             at the <strong>University of North Texas</strong>. During my program, I have learned the GEN AI, Data Engineering solutions and various Data Visualization tools.
-        </p>
+              <p className="text-lg mb-6">
+                After my time at LTIMindtree, I moved to the United States to pursue a <strong>Master’s in Artificial Intelligence </strong> 
+                at the <strong>University of North Texas</strong>. During my program, I have learned GEN AI, Data Engineering solutions, and various Data Visualization tools.
+              </p>
 
-        <p className="text-lg mb-6">
-            At <strong>Tek Leaders</strong>, I worked on building enterprise-grade features like <strong>Cycle Counting and 
-            Transport Management Systems</strong> using <strong>Java, React, and Kafka</strong>, reducing operational costs by 30%.
-        </p>
+              <p className="text-lg mb-6">
+                At <strong>Tek Leaders</strong>, I worked on building enterprise-grade features like <strong>Cycle Counting and 
+                Transport Management Systems</strong> using <strong>Java, React, and Kafka</strong>, reducing operational costs by 30%.
+              </p>
 
-        <p className="text-lg mb-6">
-            My expertise spans from developing robust <strong>microservices architectures</strong> to implementing secure 
-            <strong>OAuth2 and JWT authentication</strong>. I also have hands-on experience setting up <strong>CI/CD pipelines, 
-            cloud infrastructure, and DevOps automation</strong>.
-        </p>
+              <p className="text-lg mb-6">
+                My expertise spans from developing robust <strong>microservices architectures</strong> to implementing secure 
+                <strong>OAuth2 and JWT authentication</strong>. I also have hands-on experience setting up <strong>CI/CD pipelines, 
+                cloud infrastructure, and DevOps automation</strong>.
+              </p>
 
-        <p className="text-lg mb-6">
-            Having worked in both <strong>startup environments and large enterprises</strong>, I have developed the ability 
-            to adapt and thrive in diverse team settings.
-        </p>
+              <p className="text-lg mb-6">
+                Having worked in both <strong>startup environments and large enterprises</strong>, I have developed the ability 
+                to adapt and thrive in diverse team settings.
+              </p>
 
-        <p className="text-lg font-semibold">
-            I am now seeking a full-time position as a <strong>Software Engineer</strong>, where I can leverage my skills 
-            to drive innovation and excellence in the tech industry.
-        </p>
+              <p className="text-lg font-semibold">
+                I am now seeking a full-time position as a <strong>Software Engineer</strong>, where I can leverage my skills 
+                to drive innovation and excellence in the tech industry.
+              </p>
 
-        <p className="text-lg mt-6">
-            <strong>Let’s connect</strong> and explore how we can collaborate to build impactful solutions!
-        </p>
-    </div>
-</section>
+              <p className="text-lg mt-6">
+                <strong>Let’s connect</strong> and explore how we can collaborate to build impactful solutions!
+              </p>
+            </div>
+          </section>
 
           {/* Connect With Me Section */}
           <ConnectWithMe />
 
-      
-          
           {/* Buttons */}
           <div className="flex justify-center space-x-4">
             <a
@@ -93,13 +90,10 @@ export const Home = () => {
               <FaDownload className="ml-2" />
             </a>
           </div>
-  {/* Connect With Me Section */}
-  <ConnectWithMe />
 
-{/* 🎓 Education Section */}
-</div>
-<Education />
-</RevealOnScroll>
-</section>
-);
+        </div>
+      </RevealOnScroll>
+
+    </section>
+  );
 };
